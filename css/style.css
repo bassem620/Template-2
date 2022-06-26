@@ -1,0 +1,41 @@
+/* Global Rules */
+:root{
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+}
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+}
+@media(min-width:768px){
+    .container{
+        width:750px;
+    }
+}
+@media(min-width:992px){
+    .container{
+        width:970px
+    }
+}
+@media(min-width:1200px){
+    .container{
+        width:1170px
+    }
+}
