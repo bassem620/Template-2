@@ -873,3 +873,75 @@ header nav .form i{
         width: 100%;
     }
 }
+
+/* ######################### Contact Us ########################## */
+.contact{
+    padding-top: var(---section-padding);
+    padding-bottom: var(---section-padding);
+}
+.contact .content{
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width:768px){
+    .contact .content{
+        flex-direction: column;
+    }
+}
+.contact .content form{
+flex-basis: 70%;
+}
+.contact .content form .main-input{
+    padding: 20px;
+    display: block;
+    border: 1px solid #ccc;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.contact .content form .main-input:focus{
+    outline: none;
+}
+.contact .content form textarea.main-input{
+    height: 200px;
+    resize: none;
+}
+.contact .content form input[type="submit"]{
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    border: none;
+    display: flex;
+    margin-left: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.contact .info{
+    flex-basis: 20%;
+}
+@media(max-width:768px){
+    .contact .info{
+        margin-top: 30px;
+    }
+    .contact .content form input[type="submit"]{
+        margin-right: auto;
+    }
+}
+.contact .info h4{
+    text-transform: uppercase;
+    margin-bottom:15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.contact .info .phone{
+    display: block;
+    color: #777;
+    margin-bottom: 10px;
+}
+.contact .info h4:nth-of-type(2){
+    margin-top: 70px;
+}
+.contact .info address{
+    line-height: 1.5;
+    color: #777;
+}
