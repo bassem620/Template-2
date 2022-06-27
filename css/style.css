@@ -506,3 +506,66 @@ header nav .form i{
     margin-top: -60px;
     }
 }
+
+/* ########################## Statistics ######################### */
+.stat{
+    padding-top: var(---section-padding);
+    padding-bottom: var(---section-padding);
+    text-align: center;
+    background-image: url(../images/stats.png);
+    background-size: cover;
+    position: relative;
+}
+.stat::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 70%);
+}
+.stat .container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.stat .container .box{
+    color: white;
+    padding: 50px;
+    background-color: var(--transparent-color);
+}
+@media(max-width:768px){
+    .stat .container .box{
+        flex-basis: 100%;
+    }
+}
+@media(min-width:768px){
+    .stat .container .box{
+        flex-basis: 50%;
+    }
+}
+@media(min-width:992px){
+    .stat .container .box{
+        flex-basis: 25%;
+    }
+}
+.stat .container .box i{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 30px auto;
+    background-color: #777;
+}
+.stat .container .box .number{
+    font-size: 45px;
+    font-weight: bold;
+    margin: 0 0 20px 0;;
+}
+.stat .container .box p{
+    font-size: 14px;
+}
